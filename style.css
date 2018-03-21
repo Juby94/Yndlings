@@ -1,0 +1,182 @@
+/* Her arbejder vi på Body                      */
+
+body {
+    background-color: #D5EDFA;
+}
+
+/* Her arbejder vi på vores Grid                */
+
+#grid_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+
+/* Her arbejder vi på typografi                 */
+
+p {}
+
+h1 {}
+
+h2 {}
+
+
+/* Her arbejder vi på vores navigation         */
+
+#nav_top {
+    background-color: #00B9EA;
+    grid-column: 1/13;
+    text-align: center;
+}
+
+/* Her arbejder vi på vores Call to action:    */
+
+footer {
+    position: fixed;
+    background-color: #E10E49;
+    grid-column: 1/13;
+    margin-top: 90vh;
+    z-index: 2;
+}
+
+#buy {
+    grid-column: 4/6;
+    margin-left: 50vw;
+    /*         HJÆLP           */
+    font-size: 2vw;
+    background-color: #FCD900;
+    border-radius: 12px;
+    border: 2px solid #F2F2F2;
+
+
+
+}
+
+#buy:hover {
+    background-color: #00B9EA
+}
+
+#buy:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Her arbejder vi på vores første sektion:    */
+
+#explainer {
+    background-color: ;
+    grid-column: 2/4;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#information {
+    grid-column: 9/11;
+    margin-top: 10vh;
+}
+
+
+/*Her arbejder vi på anden sektion           */
+
+#billede_first {
+    background-image: url(img/explainer.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 40vh;
+    grid-column: 2/6;
+}
+
+#kampagne_video {
+    grid-column: 8/11;
+}
+
+/*Her arbejder vi på tredje sektion          */
+
+#slut_tekst1 {
+    grid-column: 2/4;
+}
+
+#slut_tekst2 {
+    grid-column: 9/11;
+}
+
+/* Her arbejder jeg på media screens          */
+
+@media screen and (max-width: 450px) and (min-width: 300px) {
+    #grid_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    #nav_top {
+        grid-column: 1/2;
+    }
+
+    #explainer {
+        grid-column: 1/2;
+    }
+    iframe {
+        width: 100vw;
+    }
+    #information {
+        grid-column: 1/2;
+    }
+    #billede_first {
+        grid-column: 1/2;
+    }
+    #kampagne_video {
+        grid-column: 1/2;
+    }
+
+    #slut_tekst1 {
+        grid-column: 1/2;
+    }
+    #slut_tekst2 {
+        grid-column: 1/2;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 420px) {
+    #grid_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    #nav_top {
+        grid-column: 1/2;
+    }
+
+    #explainer {
+        grid-column: 1/2;
+    }
+    iframe {
+        width: 100vw;
+    }
+    #information {
+        grid-column: 1/2;
+    }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    #grid_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    #nav_top {
+        grid-column: 1/2;
+    }
+
+    #explainer {
+        grid-column: 1/2;
+    }
+    iframe {
+        width: 100vw;
+    }
+    #information {
+        grid-column: 1/2;
+    }
+}
